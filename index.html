@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToolNova – All-in-One Online Tools</title>
+    <meta
+      name="description"
+      content="Every tool you need in one place. Compress images, merge PDFs, generate QR codes, count words, and calculate percentages privately in your browser."
+    />
+    <meta name="theme-color" content="#635BFF" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- OpenGraph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="ToolNova" />
+    <meta property="og:title" content="ToolNova – All-in-One Online Tools" />
+    <meta
+      property="og:description"
+      content="Every tool you need in one place. Compress images, merge PDFs, generate QR codes, count words, and calculate percentages privately in your browser."
+    />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ToolNova – All-in-One Online Tools" />
+    <meta
+      name="twitter:description"
+      content="Every tool you need in one place. Compress images, merge PDFs, generate QR codes, count words, and calculate percentages privately in your browser."
+    />
+
+    <!-- Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "ToolNova",
+        "alternateName": "ToolNova – All-in-One Online Tools",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "All",
+        "description": "Every Tool You Need. One Place. Fast, private browser-based utilities for images, PDFs, QR codes, text, passwords, and calculations.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    </script>
+
+    <!-- Prevent theme flash before hydration -->
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('toolnova_theme');
+          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (stored === 'dark' || (!stored && prefersDark)) {
+            document.documentElement.classList.add('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-[#F8FAFC] text-[#111827] dark:bg-[#10131C] dark:text-[#F1F5F9] antialiased selection:bg-[#635BFF]/20 selection:text-[#635BFF]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
